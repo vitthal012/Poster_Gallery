@@ -4,6 +4,7 @@ import p1 from './posters/1.png';
 import p2 from './posters/2.png';
 import p3 from './posters/3.png';
 import Cardslis from './components/newposterlist';
+import Form from './components/form';
 
 function App() {
   const poster = [
@@ -15,9 +16,11 @@ function App() {
   return (
     <>
       <Header />
+      <Form></Form>
       <Cardslis posters={poster} />
     </>
   );
+
 }
 
 export default App;
